@@ -8,8 +8,8 @@ export default async function Blog() {
 
 
 
-  const resposn = await fetch('https://dummyjson.com/products/')
-  const data=  await resposn.json()
+  const resposn = await fetch('https://fakestoreapi.com/products')
+  const data =  await resposn.json()
 
          
 
@@ -19,13 +19,13 @@ export default async function Blog() {
   return (
     <div className={styles.mainContainer}>
       
-      {data.products.map((items,index) => {return(
+      {data.map((items,index) => {return(
 
 <Link key={index} className={styles.link} href={`/blog/${items.id}`}>
 <div>
   <Image
     src={
-     items.thumbnail
+     items.image
     }
     className={styles.image}
     width={250}
@@ -34,8 +34,8 @@ export default async function Blog() {
   />
 </div>
       <div className={styles.content}>
-      <h2 className={styles.title}>{items.title}</h2>
-      <p className={styles.text}>{items.description}</p>
+      <h2 className={styles.title}> {items.title}</h2>
+      <p className={styles.text}> {items.description}</p>
       </div>
 
 

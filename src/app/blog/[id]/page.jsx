@@ -5,7 +5,7 @@ export default async function page({params}) {
 const slug = params.id
 
 
-  const resposn = await fetch(`https://dummyjson.com/products/${slug}`)
+  const resposn = await fetch(`https://fakestoreapi.com/products/${slug}`)
   const data=  await resposn.json()
 
 
@@ -19,7 +19,7 @@ const slug = params.id
         </div>
         <div className={styles.imageContainer}>
         <Image
-          src={data.thumbnail}
+          src={data.image}
           alt={'image'}
           className={styles.image}
           fill={true}
