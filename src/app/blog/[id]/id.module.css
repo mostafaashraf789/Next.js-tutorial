@@ -1,0 +1,26 @@
+.imageContainer{
+    position: relative;
+    height: 300px;
+    margin: 30px 0;
+    object-fit: cover;
+    width: 450px;
+}
+.image{
+    border-radius: 10px;
+    object-fit: fill;
+}
+.text{
+    font-weight: 400;
+    line-height: 20px;
+    columns: 2;
+    text-align: justify;
+}
+.auther{
+    position: absolute;
+    background-color: rgba(0, 255, 255, 0.308);
+    bottom: 0;
+    right: 0;
+    border-bottom-right-radius:10px ;
+    padding: 3px;
+    color:#111
+}

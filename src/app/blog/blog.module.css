@@ -1,0 +1,36 @@
+.mainContainer{
+display: grid;
+grid-template-columns: repeat(3 ,32%);
+gap:15px;
+
+}
+.image{
+object-fit: fill;
+border-radius: 13px;
+
+}
+.content{
+    color: var(--title);
+    padding: 10px;
+}
+
+.text{
+    color: var(--text)
+ 
+}
+.link{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;    
+    border: 2px solid var(--text);
+    border-radius: 15px;
+    flex-direction: column;
+    overflow: hidden;   
+    transition: 0.3s all;
+}
+.link:hover {
+  background-color: var(--hover);
+  border: 2px solid white;
+}

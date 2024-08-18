@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+        
+    padding-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link{
+    color:var(--title) ;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+ 
+}
+.links{
+ display: flex;
+ gap:30px;
+ flex-wrap: nowrap;
+    align-items: center;
+}

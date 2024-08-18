@@ -1,0 +1,22 @@
+.container{
+    border: 2px solid var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    position: relative;
+    
+}
+.light{
+font-size: 20px;
+}
+.dark{
+    font-size: 20px;
+}
+.switch{
+    position: absolute;
+    background-color: var(--primary);
+    width: 29px;
+    height: 25px;
+    border-radius: 50px;
+}
